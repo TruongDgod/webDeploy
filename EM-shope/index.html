@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <title>SHOPE</title>
+</head>
+<body>
+  <!-- bem : block(khối) emlement(con của khối) modifier(thây đổi khối) -->
+  <div class="app">
+    <div class="header">
+      <div class="grid">
+
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-list-item header__navbar-list-qrCode header__navbar-item--separete">
+              Vào cữa hàng trên ứng dụng NVTShope
+              <div class="header__qr">
+                <img src="assets/img/QR.png" alt="QR code" class="header__qr-img">
+                <div class="header__qr-apps">
+                  <a href="" class="header__qr-apps-img">                   
+                    <img src="assets/img/googlePlay.png" alt="" class="header__qr-apps-img-download">
+                  </a>
+                  <a href="" class="header__qr-apps-img">                   
+                    <img src="assets/img/appStor.png" alt="" class="header__qr-apps-img-download">
+                  </a>
+                  <a href="" class="header__qr-apps-img">                   
+                    <img src="assets/img/appGallery.png" alt="" class="header__qr-apps-img-download">
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="header__navbar-list-item">
+              <span class="header__navbar-list-item--pointer">Kết Nối</span> 
+              <a href="" class="icon-link">
+                <i class="header__navbar-icon-link fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+              <a href="" class="icon-link">
+                <i class="header__navbar-icon-link fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__navbar-list">
+
+            <li class="header__navbar-list-item header__navbar-list-hover">
+              <a href="" class="icon-link">
+                <i class="header__navbar-icon-link fa fa-bell-o" aria-hidden="true"></i>
+              </a>
+              <a href="" class="header__navbar-item-link ">Thông báo</a>
+
+              <div class="header__notify">
+                <header class="header__notify-header">
+                  <h3>Thông báo mới nhận</h3>
+                </header>
+                <ul class="header__notify-list">
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link header__notify-item--viewed">
+                      <img src="assets/img/QR.png" alt="" class="header__notify-img">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Trường chính hãng </span>
+                        <span class="header__notify-description">Mô tả mỹ phẩm Trường</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header__notify-list header__notify-item--viewed">
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img src="assets/img/QR.png" alt="" class="header__notify-img">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Trường chính hãng </span>
+                        <span class="header__notify-description">Mô tả mỹ phẩm Trường</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header__notify-list">
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img src="assets/img/QR.png" alt="" class="header__notify-img">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Trường chính hãng </span>
+                        <span class="header__notify-description">Mô tả mỹ phẩm Trường</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <footer class="header__notify-footer">
+                  <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                </footer>
+              </div>
+
+            </li>
+
+            <li class="header__navbar-list-item">
+              <a href="" class="icon-link">
+                <i class="header__navbar-icon-link fa fa-question-circle-o" aria-hidden="true"></i>
+              </a>
+              <a href="" class="header__navbar-item-link">Trợ Giúp</a>
+            </li>
+
+            <!-- <li class="header__navbar-list-item">
+              <a href="" class="header__navbar-item-link header__navbar-item-link--strong header__navbar-item--separete">Đăng ký</a>
+            </li>
+            <li class="header__navbar-list-item">
+              <a href="" class="header__navbar-item-link header__navbar-item-link--strong">Đăng nhập</a>
+            </li> -->
+
+            <li class="header__navbar-list-item login__user">
+              <img src="assets/img/QR.png" alt="" class="login__user-img">
+              <span class="login__user-name">Nguyễn Văn Trường</span>
+              <div class="login__user-list">
+                <div class="login__user-list-item">Tài khoản của tôi</div>
+                <div class="login__user-list-item">Địa chỉ của tôi</div>
+                <div class="login__user-list-item">Đơn mua</div>
+                <div class="login__user-list-item login__user-list-item--modifier">Đăng xuất</div>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- header with search -->
+        <div class="header-with__search">
+          <div class="header-with__search-logo">
+            <img src="assets/img/logo-removebg.png" alt="" class="header-with__search-img">
+          </div>
+          <div class="header-with__search-input">
+            <div class="search-input__wrap">
+              <input class="search-input__wrap-input" type="text" placeholder="Nhập để tìm sản phẩm">
+              <div class="search-input__wrap-history">
+                <h3>Lịch sử tìm kiếm</h3>
+                <ul class="search-input__wrap-history-list">
+                  <li class="search-input__wrap-history-item">
+                    <a href="">nguyen van trương</a> 
+                  </li>
+                  <li class="search-input__wrap-history-item">
+                    <a href="">nguyen van trương</a> 
+                  </li>
+                </ul>
+              </div>
+            </div> 
+            
+            <div class="search-input__input-content">
+              <span class="search-input__input-content-chu">Trong shop</span>
+              <i class="search-input__input-content-icon fa fa-angle-down" aria-hidden="true"></i> 
+
+              <ul class="search-input__input-content-list">
+                <li class="input-content-list__option input-content-list__option--action">
+                  <span>Trong shop</span>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </li>
+                <li class="input-content-list__option">
+                  <span>Ngoai shop</span>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </li>
+              </ul>
+
+            </div>
+
+            <button class="header-with__search-btn">
+              <i class="header-with__search-btn-icon fa fa-search" aria-hidden="true"></i>
+            </button>
+
+          </div>
+
+          <!-- cart  -->
+          <div class="header-with__search-cart">
+            <div class="header-with__search-cart-wrap">
+              <i class="search-cart fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class="header-with__search-cart-wrap-number">3</span>
+              <!-- khi không có sản phẩm thêm class header-with__search-cart-list--no-cart vào -->
+              <div class="header-with__search-cart-list">
+                <img src="assets/img/emptycart.webp" alt="" class="header-with__search-cart-img">
+                <h3 class="header-with__search-cart-massage">Chưa có sản phẩm</h3>
+
+                <header class="header-with__search-cart-header">
+                  <h3>Sản phẩm đã thêm</h3>
+                </header>
+
+                <ul class="header-with__search-cart-product">
+                  <li class="header-with__search-cart-product-list">
+                    <!-- (cart-product-list__link--viewed) motyfio -->
+                    <a href="" class="cart-product-list__link">
+                      <img src="assets/img/QR.png" alt="" class="cart-product-list__img">
+                      <div class="cart-product-list__info">
+                        <div class="cart-product-list__info-header">
+                          <h5 class="cart-product-list__info-header-trademark">Mỹ phẩm Trường chính hãng </h5>
+                          <div class="cart-product-list__info-header-price-wrap">
+                            <span class="cart-product-list__info-header-price">2.000.000đ</span>
+                            <span class="cart-product-list__info-header-multiply">x</span>
+                            <span class="cart-product-list__info-header-number">1</span>
+                          </div>
+                        </div>
+                        <div class="cart-product-list__info-body">
+                          <span class="cart-product-list__info-header-name">Phân loại hàng : bạc </span>
+                          <span class="cart-product-list__info-header-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header-with__search-cart-product">
+                  <li class="header-with__search-cart-product-list">
+                    <!-- (cart-product-list__link--viewed) motyfio -->
+                    <a href="" class="cart-product-list__link">
+                      <img src="assets/img/QR.png" alt="" class="cart-product-list__img">
+                      <div class="cart-product-list__info">
+                        <div class="cart-product-list__info-header">
+                          <h5 class="cart-product-list__info-header-trademark">Mỹ phẩm Trường chính hãng </h5>
+                          <div class="cart-product-list__info-header-price-wrap">
+                            <span class="cart-product-list__info-header-price">2.000.000đ</span>
+                            <span class="cart-product-list__info-header-multiply">x</span>
+                            <span class="cart-product-list__info-header-number">1</span>
+                          </div>
+                        </div>
+                        <div class="cart-product-list__info-body">
+                          <span class="cart-product-list__info-header-name">Phân loại hàng : bạc </span>
+                          <span class="cart-product-list__info-header-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header-with__search-cart-product">
+                  <li class="header-with__search-cart-product-list">
+                    <!-- (cart-product-list__link--viewed) motyfio -->
+                    <a href="" class="cart-product-list__link">
+                      <img src="assets/img/QR.png" alt="" class="cart-product-list__img">
+                      <div class="cart-product-list__info">
+                        <div class="cart-product-list__info-header">
+                          <h5 class="cart-product-list__info-header-trademark">Mỹ phẩm Trường chính hãng </h5>
+                          <div class="cart-product-list__info-header-price-wrap">
+                            <span class="cart-product-list__info-header-price">2.000.000đ</span>
+                            <span class="cart-product-list__info-header-multiply">x</span>
+                            <span class="cart-product-list__info-header-number">1</span>
+                          </div>
+                        </div>
+                        <div class="cart-product-list__info-body">
+                          <span class="cart-product-list__info-header-name">Phân loại hàng : bạc </span>
+                          <span class="cart-product-list__info-header-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <a class="button" href="">Xem Giỏ Hàng</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="app__container">
+      <div class="grid">
+        <div class="grid__row grid-padding">
+
+          <div class="grid__colunm-2">        
+            <nav class="category">
+              <h3 class="category__heading">
+                <i class="category__heading-icon fa fa-list" aria-hidden="true"></i>
+                Danh Mục</h3>
+      
+              <ul class="category-list">
+                <li class="category-item category-item--active">
+                  <a href="" class="category-item__link">Trang điểm mặt</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link">Trang điểm môi</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link">Trang điểm mắt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="grid__colunm-10"> 
+            <div class="home-filter">
+              <span class="home-filter__label">Sắp xếp theo</span>
+              <button class="home-filter__btn btn">phổ Biến</button>
+              <button class="home-filter__btn btn btn-primary">Mới Nhất</button>
+              <button class="home-filter__btn btn">Bán Chạy</button>
+
+              <div class="select-input">
+                <span class="select-input__label">Giá</span>
+                <i class="select-input__icon fa fa-angle-down"></i>
+                <!-- list options -->
+                <ul class="select-input__list">
+                  <li class="select-input__item">
+                    <a href="" class="select-input__link">Giá : Thấp đến cao</a>
+                    <a href="" class="select-input__link">Giá : Cao đến thấp</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="home-filter__page">
+                <span class="home-filter__page-number">
+                  <span class="home-filter__page-current">1</span>
+                  /14
+                </span>
+                <div class="home-filter__page-control">
+                  <a href="" class="home-filter__page-btn btn">
+                    <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a href="" class="home-filter__page-btn btn">
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>  
+            <div class="home-product">
+              <div class="grid__row">
+        
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__colunm-2-4">
+                  <!-- home product item-->
+                  <div class="home-product-item">
+                    <div class="home-product-item__img" style="background-image: url(assets/img/appGallery.png);"></div>
+                    <h4 class="home-product-item__name">QNT chúng ra ttttttttttttttttttt không thuộc về nhau nhá con trai</h4>
+                    <div class="home-product-item__price">
+                      <span class="home-product-item__price-old">1.200.000đ</span>
+                      <span class="home-product-item__price-current">900.000đ</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <div class="home-product-item__like home-product-item__like-fill">
+                        <i class="home-product-item__like-emtry fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="home-product-item__like-cons fa fa-heart" aria-hidden="true"></i>
+                      </div>
+                      <div class="home-product-item__rating">
+                        <!-- modifier -->
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="home-product-item__rating-gold fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <span class="home-product-item__sold">89 đã bán</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">truong</span>
+                      <span class="home-product-item__origin-name">việt nam</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <span>Yêu thích</span>
+                    </div>
+                    <div class="home-product-item__sele-off">
+                      <span class="home-product-item__sele-off-persen">10%</span>
+                      <span class="home-product-item__sele-off-label">GIẢM</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      
+    </div>
+
+    <!-- <div class="model">
+      <div class="model-overlay"></div>
+      
+      <div class="model-body"> -->
+        <!-- register-form -->
+          <!-- <form class="auth-form">
+
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <div class="auth-form__header-t ">Đăng nhập</div>
+                <div class="auth-form__header-t red-color">Đăng ký</div>
+              </div>
+  
+              <div class="auth-form__body-up">
+                <div class="auth-form__body-input">
+                  <input type="text" class="input-form" placeholder="Username">
+                </div>
+                <div class="auth-form__body-input">
+                  <input type="text" class="input-form" placeholder="Email/SDT">
+                </div>
+                <div class="auth-form__body-input">
+                  <input type="text" class="input-form" placeholder="Password">
+                </div>
+              </div>
+              <div class="auth-form__body-down">
+                <div class="auth-form__body-text">
+                    Bằng việc đăng ký , bạn có đồng ý với shope về 
+                    <a href="" class="auth-form__body-text-link">Điều khoảng dịch vụ</a> & 
+                    <a href="" class="auth-form__body-text-link">chính sách bảo mật</a>
+                </div>
+              </div>
+  
+                <div class="auth-form__footer-up">
+                  <button class="bton bton--back">Trở lại</button>
+                  <button class="bton bton--dk">Đăng ký</button>
+                </div>
+            </div>
+
+              <div class="auth-form__footer-down">      
+                <a href="" class="footer-down-content">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <span class="footer-down-left__text">kết nối với Facebook</span>
+                </a>
+
+                <a href="" class="footer-down-right">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                  <span class="footer-down-left__text">kết nối với Google</span>
+                </a>
+              </div>
+
+          </form> -->
+        <!-- login-form -->
+          <!-- <form class="auth-form">
+
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <div class="auth-form__header ">Đăng ký</div>
+                <div class="auth-form__header red-color">Đăng nhập</div>
+              </div>
+  
+              <div class="auth-form__body-up">
+                <div class="auth-form__body-input">
+                  <input type="text" class="input-form" placeholder="Email/SDT">
+                </div>
+                <div class="auth-form__body-input">
+                  <input type="text" class="input-form" placeholder="Password">
+                </div>  
+              </div>
+              <div class="auth-form__body-down">
+                <div class="auth-form__body-text-links">
+                    <a href="" class="body-text--link ">Quên mật khẩu</a> |
+                    <a href="" class="body-text--link">Cần trợ giúp</a>
+                </div>
+              </div>
+  
+                <div class="auth-form__footer-up">
+                  <button class="bton bton--back">Trở lại</button>
+                  <button class="bton bton--dk">Đăng nhập</button>
+                </div>
+            </div>
+
+              <div class="auth-form__footer-down">      
+                <a href="" class="footer-down-left">
+                  <i class="fa fa-comment-o" aria-hidden="true"></i>
+                  <span class="footer-down-left__text">SMS</span>
+                </a>
+                <a href="" class="footer-down-content">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <span class="footer-down-left__text">Facebook</span>
+                </a>
+
+                <a href="" class="footer-down-right">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                  <span class="footer-down-left__text">Google</span>
+                </a>
+              </div>
+
+          </form> -->
+      <!-- </div>
+    </div>
+  </div> -->
+</body>
+<!-- </html>mwg vnm -->

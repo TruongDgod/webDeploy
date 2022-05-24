@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WEB_BanRauCuQua</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- //font-awesome icons -->
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<link
+		href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+</head>
+
+<body>
+	<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Ưu đãi đặt biệt hôm nay</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Tìm Kiếm Sản Phẩm ..." onfocus="this.value = '';"
+					onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">
+			<form action="#" method="post" class="last">
+				<fieldset>
+					<input type="hidden" name="cmd" value="_cart" />
+					<input type="hidden" name="display" value="1" />
+					<input type="submit" name="submit" value="QL GIỎ HÀNG" class="button" />
+				</fieldset>
+			</form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"
+							aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li>
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Liên Hệ</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- script-for sticky-nav -->
+	<script>
+		$(document).ready(function () {
+			var navoffeset = $(".agileits_header").offset().top;
+			$(window).scroll(function () {
+				var scrollpos = $(window).scrollTop();
+				if (scrollpos >= navoffeset) {
+					$(".agileits_header").addClass("fixed");
+				} else {
+					$(".agileits_header").removeClass("fixed");
+				}
+			});
+
+		});
+	</script>
+	<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="events.html">Sự Kiện</a><i>/</i></li>
+					<li><a href="about.html">Về chúng tôi</a><i>/</i></li>
+					<li><a href="products.html">Siêu Giảm Giá</a><i>/</i></li>
+					<li><a href="services.html">Dịch Vụ</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+035) 831 7952</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a
+							href="mailto:18130263@st.hcmuaf.edu.vn">18130263@st.hcmuaf.edu.vn</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Trang chủ</a><span>|</span></li>
+				<li>Chính sách bảo mật</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //products-breadcrumb -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+						data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="products.html">Thực phẩm có thương hiệu</a></li>
+						<li><a href="household.html">Hộ gia đình</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rau & Trái cây<span
+									class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="vegetables.html">Rau</a></li>
+										<li><a href="fruits.html">Trái cây</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="kitchen.html">Phòng bếp</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Đồ uống<span
+									class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">Nước ngọt</a></li>
+										<li><a href="drinks.html">Nước trái cây</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+			<!-- privacy -->
+			<div class="privacy">
+				<div class="privacy1">
+					<h3>CHÍNH SÁCH BẢO MẬT</h3>
+					<div class="banner-bottom-grid1 privacy1-grid">
+						<ul>
+							<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
+							<li>Hồ sơ <span>Bạn có thể sử dụng các dịch vụ của chúng tôi theo nhiều cách khác nhau – để
+									tìm kiếm và chia sẻ thông tin, để giao tiếp với người khác hoặc để tạo nội dung mới.
+									Khi bạn chia sẻ thông tin với chúng tôi, ví dụ như bằng cách tạo Tài khoản Google,
+									chúng tôi có thể làm cho các dịch vụ đó trở nên tốt hơn nữa – để hiển thị cho bạn
+									nhiều kết quả tìm kiếm và quảng cáo liên quan hơn, để giúp bạn kết nối với mọi người
+									hoặc để làm cho việc chia sẻ với người khác trở nên nhanh hơn và dễ dàng hơn. Khi
+									bạn sử dụng dịch vụ của chúng tôi, chúng tôi muốn bạn biết rõ cách chúng tôi đang sử
+									dụng thông tin và cách bạn có thể bảo vệ sự riêng tư của mình.</span></li>
+						</ul>
+						<ul>
+							<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
+							<li>Tìm kiếm <span>Các trình duyệt dùng địa chỉ IP để tải trang web. Khi bạn truy cập vào
+									một trang web, Chrome có thể tra cứu địa chỉ IP của tất cả các đường liên kết thuộc
+									trang đó và tải các đường liên kết mà bạn có thể sẽ truy cập tiếp theo. Nếu bạn bật
+									tùy chọn cài đặt này, thì các trang web và mọi nội dung đã nhúng được tải trước đều
+									có thể đặt và đọc cookie riêng của các trang đó, như thể bạn đã truy cập vào các
+									trang đó, ngay cả khi bạn chưa từng truy cập.</span></li>
+						</ul>
+						<ul>
+							<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
+							<li>Nguồn cấp tin tức<span>Nhận cảnh báo bất cứ khi nào Chrome thấy trang web bạn đang truy
+									cập có thể gây hại. Khi bạn truy cập vào một trang web, Chrome sẽ đối chiếu trang
+									web đó với danh sách các trang web có nội dung xấu đã biết có trên máy tính của bạn.
+									Nếu trang web đó khớp với bất kỳ trang web nào trên danh sách, trình duyệt của bạn
+									sẽ gửi một phần bản sao của địa chỉ trang web tới Google để xác định xem có phải bạn
+									đang truy cập vào một trang web nguy hiểm không.</span></li>
+						</ul>
+						<ul>
+							<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
+							<li>Các ứng dụng <span>Zing MP3, Nhaccuatui, Spotify
+									Zing MP3
+									Zing MP3 có lẽ đã không còn xa lạ gì đối với giới trẻ Việt Nam khi tìm kiếm nguồn
+									nhạc. Đây được xem là ứng dụng nghe nhạc miễn phí hàng đầu. Khi cài đặt, “chú dế”
+									của bạn sẽ sở hữu ngay một kho nhạc đồ sộ với chất lượng cao. Về phong cách thiết kế
+									giao diện
+									Ứng dụng nghe nhạc của Zing từ trước đến nay luôn đi theo xu hướng thiết kế phẳng
+									hiện đại. Với Zing MP3, giao diện của ứng dụng kết hợp giữa phông nền trắng và dải
+									màu tím quyến rũ. Cả hai kết hợp tạo thành các đường chia cắt tab, mục lục, danh
+									sách bài hát,… Ứng dụng tiên phong đi theo thiết kế đơn giản. Nó lược đi những chi
+									tiết thừa. Như vậy sẽ giúp giao diện có thể chạy mượt mà trên mọi thiết bị. </span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="privacy1">
+					<h3>ĐIỀU KHOẢN SỬ DỤNG</h3>
+					<div class="banner-bottom-grid1 privacy2-grid">
+						<div class="privacy2-grid1">
+							<h4>Giới thiệu</h4>
+							<p>Khi bạn truy cập vào trang web của chúng tôi có nghĩa là bạn đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong quy định và điều kiện sử dụng vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi bạn tiếp tục sử dụng trang web, sau khi các thay đổi về quy định và điều kiện được đăng tải, có nghĩa là bạn chấp nhận với những thay đổi đó. Bạn vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.</p>
+							<div class="privacy2-grid1-sub">
+								<h5>1. Hướng dẫn sử dụng web</h5>
+								<p>Trang web này chỉ dùng để cung cấp thông tin sản phẩm 
+
+									Bạn phải đăng ký tài khoản với thông tin xác thực về bản thân và phải cập nhật nếu có bất kỳ thay đổi nào. Mỗi người truy cập phải có trách nhiệm với mật khẩu, tài khoản và hoạt động của mình trên web. Hơn nữa, bạn phải thông báo cho chúng tôi biết khi tài khoản bị truy cập trái phép. Chúng tôi không chịu bất kỳ trách nhiệm nào, dù trực tiếp hay gián tiếp, đối với những thiệt hại hoặc mất mát gây ra do bạn không tuân thủ quy định.
+								</p>
+							</div>
+							<div class="privacy2-grid1-sub">
+								<h5>2. Ý kiến khách hàng</h5>
+								<p>Tất cả nội dung trang web và ý kiến phê bình của bạn đều là tài sản của chúng tôi. Nếu chúng tôi phát hiện bất kỳ thông tin giả mạo nào, chúng tôi sẽ khóa tài khoản của bạn ngay lập tức hoặc áp dụng các biện pháp khác theo quy định của pháp luật Việt Nam.</p>
+							</div>
+							<div class="privacy2-grid1-sub">
+								<h5>3. Đặt hàng và xác nhận đơn hàng</h5>
+								<p>Để yêu cầu đặt hàng được xác nhận nhanh chóng, bạn vui lòng cung cấp đúng và đầy đủ các thông tin liên quan đến việc giao nhận, hoặc các điều khoản và điều kiện của chương trình khuyến mãi (nếu có) mà bạn tham gia.</p>
+							</div>
+							<div class="privacy2-grid1-sub">
+								<h5>4. Giá trị đơn hàng và hình thức thanh toán</h5>
+								<p>Trừ một số trường hợp có ghi chú riêng, thông thường bạn có thể lựa chọn một trong 3 hình thức thanh toán trên khi tiến hành đặt hàng. Tuy nhiên, để đảm bảo tính an toàn dành cho bạn trong quá trình thanh toán, đối với những đơn hàng có giá trị cao từ 10 (mười) triệu đồng trở lên,chỉ chấp nhận hình thức thanh toán trước bằng thẻ thanh toán quốc tế hoặc thẻ thanh toán nội địa.
+								</p>
+							</div>
+							<div class="privacy2-grid1-sub">
+								<h5>5. Chương trình khuyến mãi</h5>
+								<p>Với mong muốn mang lại nhiều lợi ích cho khách hàng, Chúng tôi thường xuyên có các chương trình giảm giá đặc biệt. Tuy nhiên, để đảm bảo tính công bằng cho khách hàng là người tiêu dùng cuối cùng , chúng tôi có quyền từ chối các đơn hàng không nhằm mục đích sử dụng cho cá nhân, mua hàng số lượng nhiều hoặc với mục đích mua đi bán lại khi bạn tham gia các chương trình khuyến mãi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //privacy -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- //banner -->
+	<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_left">
+				<h3>Đăng Ký Nhận Bản Tin Của Chúng Tôi</h3>
+			</div>
+			<div class="w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';"
+						onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="Theo Dõi Ngay">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //newsletter -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>THÔNG TIN</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="events.html">Sự Kiện</a></li>
+					<li><a href="about.html">Về Chúng Tôi</a></li>
+					<li><a href="products.html">Giao Dịch Tốt Nhất</a></li>
+					<li><a href="services.html">Dịch Vụ</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>THÔNG TIN CHÍNH SÁCH</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">Câu Hỏi Thường Gặp</a></li>
+					<li><a href="privacy.html">Chính Sách Bảo Mật</a></li>
+					<li><a href="privacy.html">Điều Khoản Sử Dụng</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>NHỮNG GÌ TRONG CỬA HÀNG</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="kitchen.html">Phòng Bếp</a></li>
+					<li><a href="products.html">Thực Phẩm Có Thương Hiệu</a></li>
+					<li><a href="household.html">Hộ Gia Đình</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>BÀI ĐĂNG TRÊN TWITTER</h3>
+				<ul class="w3_footer_grid_list1">
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 ngày trước</i><span>Đôi khi,<a
+								href="#">http://sd.ds/13jklf#</a>
+							thuộc loại đó, bạn nên làm việc và các mùa của mùa thu
+							<a href="#">http://sd.ds/1389kjklf#</a>không còn nữa.</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 ngày trước</i><span>Không bao giờ
+							<a href="#">http://fd.uf/56hfg#</a>
+							loại đó, bạn nên làm việc và các mùa của mùa thu
+							<a href="#">http://fd.uf/56hfg#</a>đã hết.</span></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% Thanh Toán An Toàn</h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>Kết Nối Với Chúng Tôi</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>Group 54</p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="js/minicart.js"></script>
+	<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 1) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body>
+
+</html>

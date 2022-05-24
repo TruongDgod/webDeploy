@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB_BanRauCuQua</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	<style>
+	</style>
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Ưu đãi đặt biệt hôm nay</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Tìm Kiếm Sản Phẩm ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="QL GIỎ HÀNG" class="button"/>
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li> 
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Liên Hệ</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="events.html">Sự Kiện</a><i>/</i></li>
+					<li><a href="about.html">Về chúng tôi</a><i>/</i></li>
+					<li><a href="products.html">Siêu Giảm Giá</a><i>/</i></li>
+					<li><a href="services.html">Dịch Vụ</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+035) 831 7952</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:18130263@st.hcmuaf.edu.vn">18130263@st.hcmuaf.edu.vn</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Trang chủ</a><span>|</span></li>
+				<li>Về chúng tôi</li>
+			</ul>
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			 <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>				
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+			   <!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="products.html">Thực phẩm có thương hiệu</a></li>
+						<li><a href="household.html">Hộ gia đình</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rau & Trái cây<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="vegetables.html">Rau</a></li>
+										<li><a href="fruits.html">Trái cây</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="kitchen.html">Phòng bếp</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Đồ uống<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">Nước ngọt</a></li>
+										<li><a href="drinks.html">Nước trái cây</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+					</ul>
+				 </div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+<!-- about -->
+		<div class="privacy about">
+			<h3>Về chúng tôi</h3>
+			<p class="animi">Chúng tôi cho là xứng đáng với họ, và họ đang buộc tội những người ghét người công bình, Nhưng, sự thật, và bị hư hỏng bởi sự xu nịnh của hiện tại và những thú vui bị xóa bỏ khiến họ bị mù quáng bởi sự quỷ quyệt của những nỗi đau này, và vì anh ta đã không lường trước được những rắc rối của omnis, nhiệm vụ của những người bỏ rơi tinh thần của tướng quân, và trong cùng một chương là lỗi của anh ta, đó là, sự lao động và đau đớn của anh ta. Nhưng điều này cần sự phân biệt đơn giản và dễ dàng.</p>
+			<div class="agile_about_grids">
+				<div class="col-md-6 agile_about_grid_right">
+					<img src="images/31.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 agile_about_grid_left">
+					<ol>
+						<li>đồ ăn nhẹ và đau đớn</li>
+						<li>trong số họ giao dịch một cách đồi bại, và nỗi đau nào trong số này,</li>
+						<li>và dễ dàng phân biệt</li>
+						<li>tố cáo họ đối phó với tham nhũng, ai</li>
+						<li>mong muốn bị mù là omnis</li>
+						<li>chỉ cho phép buộc tội</li>
+					</ol>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+<!-- //about -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3>Group Members 54</h3>
+			<div class="agileits_team_grids">
+				<div class="col-md-3 agileits_team_grid">
+					<img src="images/32.jpg" alt=" " class="img-responsive" />
+					<h4>Nguyễn Văn Trường</h4>	
+					<p>MSSV 18130263</p>
+					<p>Manager</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileits_team_grid">
+					<img src="images/33.jpg" alt=" " class="img-responsive" />
+					<h4>Đỗ Hải Đăng</h4>
+					<p>MSSV 18130026</p>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileits_team_grid">
+					<img src="images/34.jpg" alt=" " class="img-responsive" />
+					<h4>Mạnh Thế Khoa</h4>
+					<p>MSSV 18130113</p>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3>Lời chứng thực</h3>
+				<div class="w3_testimonials_grids">
+					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Chất lượng và cách giới thiệu sản phẩm là các tiêu chuẩn cho mặt hàng này tại châu Âu và yêu cầu các sản phẩm của bạn phải tuân thủ. Đặc biệt, cần chú ý là mỗi khách hàng lại có những yêu cầu và đòi hỏi chất lượng cụ thể của riêng mình.</p>
+										<h4>Andrew Smith <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Một yêu cầu tối thiểu trong kinh doanh với thị trường châu Âu là giấy chứng nhận Global G.A.P. Sản phẩm và quy trình sản xuất của bạn phải được chứng nhận. Điều quan trọng là bạn phải tuân thủ các luật và tiêu chuẩn an toàn thực phẩm của Liên minh Châu Âu (EU)</p>
+										<h4>Thomson Richard <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Đặc biệt, các công ty bán lẻ ở Bắc Âu, yêu cầu bổ sung liên quan đến mức dư lượng tối đa cho phép trên các sản phẩm. Các mức độ yêu cầu của các công ty bán lẻ đối với dư lượng cho phép trên thực tế khắt khe hơn nhiều so với luật an toàn thực phẩm châu Âu yêu cầu. Họ cũng chặt chẽ hơn so với chứng nhận từ GlobalG.A.P. đòi hỏi. Các chương trình và hồ sơ phun hóa chất sẽ được yêu cầu cung cấp ngoài giấy chứng nhận GlobalG.A.P.</p>
+										<h4>Crisp Kale <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Bên cạnh yêu cầu về an toàn thực phẩm của GlobalGap, còn có các yêu cầu của người mua về vệ sinh trong quá trình chế biến và đóng gói. Chứng nhận HACCP (Phân tích mối nguy và Điểm kiểm soát quan trọng) là một yêu cầu tối thiểu.</p>
+										<h4>John Paul <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Nhiều siêu thị châu Âu đòi hỏi tuân thủ Tiêu chuẩn BRC từ Hiệp hội Bán lẻ Anh (BRC). Ngoài ra còn có các giấy chứng nhận và giao thức quốc tế khác giống như các tổ chức từ IFS (Tiêu chuẩn thực phẩm quốc tế).</p>
+										<h4>Rosy Carl <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Xem xét các chứng nhận vệ sinh bổ sung: BRC (British Retail Consortium) kiểm toán và chứng nhận các vệ sinh và chất lượng thường được yêu cầu bởi các siêu thị châu Âu. IFS có thể là một giấy chứng nhận có thể thay thế.</p>
+										<h4>Rockson Doe <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<script src="js/jquery.wmuSlider.js"></script> 
+					<script>
+						$('.example1').wmuSlider();         
+					</script> 
+				</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_left">
+				<h3>Đăng Ký Nhận Bản Tin Của Chúng Tôi</h3>
+			</div>
+			<div class="w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="Theo Dõi Ngay">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>THÔNG TIN</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="events.html">Sự Kiện</a></li>
+					<li><a href="about.html">Về Chúng Tôi</a></li>
+					<li><a href="products.html">Giao Dịch Tốt Nhất</a></li>
+					<li><a href="services.html">Dịch Vụ</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>THÔNG TIN CHÍNH SÁCH</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">Câu Hỏi Thường Gặp</a></li>
+					<li><a href="privacy.html">Chính Sách Bảo Mật</a></li>
+					<li><a href="privacy.html">Điều Khoản Sử Dụng</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>NHỮNG GÌ TRONG CỬA HÀNG</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="kitchen.html">Phòng Bếp</a></li>
+					<li><a href="products.html">Thực Phẩm Có Thương Hiệu</a></li>
+					<li><a href="household.html">Hộ Gia Đình</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>BÀI ĐĂNG TRÊN TWITTER</h3>
+				<ul class="w3_footer_grid_list1">
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 ngày trước</i><span>Đôi khi,<a href="#">http://sd.ds/13jklf#</a>
+						thuộc loại đó, bạn nên làm việc và các mùa của mùa thu
+						<a href="#">http://sd.ds/1389kjklf#</a>không còn nữa.</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 ngày trước</i><span>Không bao giờ <a href="#">http://fd.uf/56hfg#</a>
+						loại đó, bạn nên làm việc và các mùa của mùa thu
+						<a href="#">http://fd.uf/56hfg#</a>đã hết.</span></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% Thanh Toán An Toàn</h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>Kết Nối Với Chúng Tôi</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>Group 54</p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 1) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body>
+</html>

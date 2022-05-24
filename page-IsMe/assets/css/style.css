@@ -1,0 +1,468 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* conmon */
+.clear{
+    clear: both;
+}
+.text-white{
+    color: #fff !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border:none;
+    text-align: center;
+}
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: 33.3333%;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.MepTren-8{
+    padding-top:8px !important;
+}
+.MepTren-16{
+    padding-top:16px !important;
+}
+.MepDuoi-48{
+    margin-bottom: 48px !important;
+}
+.pull-right{ 
+    float: right !important;
+}
+.text-content {
+    text-align: center;
+}
+/* main */
+/* làm từ ngoài vào trong làm từ trên xuống dưới */
+/* vi trí
+    kích thước
+    màu sắc
+    kiểu dáng(kiểu chữ,hình tròn,vuông .. ) */
+    /* header */
+/* menu */
+#nav{
+    display:inline-block;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+    border: 1px solid #b4b4b4;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav{
+    display:none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160PX;
+    top: 100%;
+    left: 0;
+    border-radius: 3px;
+    margin-left: -20px;
+    list-style: none;
+}
+#nav .subnav a{
+    color: #000;
+    border-bottom: 1px solid #e4e3e3;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .subnav:hover li a{
+    opacity: 1;
+}
+#nav .nav-angle-down{
+    font-size: 14px;
+}
+#nav .nav-angle-up{
+    font-size: 14px;
+    color: black;
+    margin-left:50px;
+}
+/* menu */
+/* search */
+#header .mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu,
+#header .search-hd{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+#header .search-hd:hover{
+    background: rgb(250, 60, 60);
+}
+#header .mobile-menu-header,
+#header .search-hd-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .mobile-menu:hover {
+    background: #ddd;
+}
+#header .mobile-menu:hover .mobile-menu-header{
+    color: #000;
+}
+/* end search */
+/* end header */
+
+/* slider */
+#slider .text-content{
+    position: absolute;
+    bottom:47px;
+    color: rgb(221, 77, 161);
+    width:100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+/* end slider */
+
+/* content */
+/* about section */
+#content .content-section {
+    width:750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 128px;
+    border-radius: 20px;
+}
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing:4px;
+}
+#content .section-sub-heading {
+    text-align: center;
+    font-size:15px;
+    padding: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    
+}
+#content .about-content {
+    font-size: 15px;
+    padding: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .members-list {
+    padding-top: 48px;
+}
+#content .member-name {
+    font-size: 15px;
+
+}
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+/* end about section */
+/* tour section */
+#content .tour-section{
+    background-color:#000;
+}
+#content .tickits-list{
+    background-color: #fff;
+    margin-top: 40ox;
+}
+.tickits-list li{
+    color: #757575;
+    font-size: 15px;
+    list-style: none;
+    padding: 11px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.tickits-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickits-list .quantity{
+    background-color: #000;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    float: right;
+    margin-top: -3px;
+}
+
+.places-list {
+    margin-top: 16px;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px
+}
+
+.place-hadding-name {
+    font-size: 15px;
+    padding-top: 11px
+}
+
+.place-time {
+    opacity:0.7;
+    padding-top: 15px
+}
+
+.place-desc {
+    padding-top: 15px
+}
+
+
+/* end tour section */
+
+/*  contact section */
+.contact-content{
+    padding-top: 17px;
+}
+.contact-info{
+    font-size:18px;
+    line-height : 1.6;
+}
+.contact-info i[class*="ti-"]{
+    width:30px;
+    display: inline-block;
+}
+.contact-form .form-control{
+    font-size:15px;
+    padding: 10px;
+    width:100%;
+}
+/* end about section */
+/* end content */
+
+/* map-section */
+.map-section img{
+    width: 100%;
+}
+/* end map-section */
+
+/* footer */
+.footer-list{
+}
+.footer-list a{
+    text-decoration:none;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);    
+}
+.footer-list a:hover{
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.4);    
+}
+.copyright{
+    opacity: 0.7;
+}
+.copyright a{
+    text-decoration:none;
+}
+/* end footer */
+#main {
+
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#slider {
+    padding-top: 50%;
+    margin-top:46px;
+    background: url("../img/chicago.jpg") center / cover no-repeat;
+    position: relative;
+}
+#content {
+
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+/* modal */
+.modal{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display:flex;
+}
+.modal-container{
+    border-radius: 4px;
+    position: relative;
+    height:400px;
+    background-color: rgb(255, 255, 255);
+    width:900px;
+    max-width: calc(100% - 32px);
+    animation: gofakein ease-in .3s;
+}
+.modal-header{
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(70, 182, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 4px;
+}   
+.modal-header i{
+    padding-right: 10px;
+}
+.modal-close{
+    color: #fff;
+    position: absolute;
+    padding: 7px;
+    margin: 3px;
+    display: flex;
+    right: 0;
+    border-radius: 2px;
+}
+.modal-close:hover{
+    background-color:rgb(137, 255, 216);
+    cursor: pointer;
+}
+.modal-body{
+    padding:20px;
+}
+.modal-label{
+    display: block;
+}
+.modal-label{
+    margin-bottom: 12px;
+}
+.modal-input{
+    margin-bottom: 24px;
+    padding: 8px;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+}
+.buy-tickets{
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    background-color: rgb(70, 182, 145);
+    color: #fff;
+}
+.buy-tickets:hover{
+    background-color:rgb(84, 223, 176);
+    cursor: pointer;
+}
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right:20px;
+}
+.modal-footer__support{
+    font-size: 14px;
+    right: 0;
+}
+.modal-footer__support-help{
+    text-decoration: none;
+}
+@keyframes gofakein{
+    from {
+        opacity: 0;
+        transform:translateY(-100px)
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0)
+    }
+}
+
+
